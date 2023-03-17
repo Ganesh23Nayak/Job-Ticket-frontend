@@ -13,12 +13,10 @@ function Login() {
   const [password, setpassword] = useState("");
   const [ShowLoading, setShowLoading] = useState(false);
 
-  const signUp = () => {
-    axios.post(`${import.meta.env.VITE_SERVER_URL}/api/signUp`,
+  const loginUser = () => {
+    axios.post(`${import.meta.env.VITE_SERVER_URL}/api/signIn`,
       {
-        name,
         contact,
-        email,
         password,
       },
       {
@@ -78,7 +76,7 @@ function Login() {
                     </p>
                     <button
                       className="btn btn-outline-light btn-lg px-5"
-                      type="submit"
+                      onClick={loginUser}
                     >
                       Login
                     </button>
