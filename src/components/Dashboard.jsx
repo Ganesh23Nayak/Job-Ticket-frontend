@@ -8,7 +8,7 @@ import './Dash.css'
 function Dashboard({type}) {
   return (
   <>
-    <div className="d-lg-flex">
+    <div className="d-lg-flex bg-set-dash">
       <Profile/>
       <div className="d-lg-flex flex-column">
         <Phone_Email type={type}/>
