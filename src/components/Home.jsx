@@ -136,7 +136,7 @@ function Home() {
                     placeholder="Enter your name..."
                     data-sb-validations="required"
                   />
-                  <label for="name">Full name</label>
+                  <label htmlFor="name">Full name</label>
                   <div
                     className="invalid-feedback"
                     data-sb-feedback="name:required"
@@ -153,7 +153,7 @@ function Home() {
                     placeholder="name@example.com"
                     data-sb-validations="required,email"
                   />
-                  <label for="email">Email address</label>
+                  <label htmlFor="email">Email address</label>
                   <div
                     className="invalid-feedback"
                     data-sb-feedback="email:required"
@@ -173,7 +173,7 @@ function Home() {
                     placeholder="(123) 456-7890"
                     data-sb-validations="required"
                   />
-                  <label for="phone">Phone number</label>
+                  <label htmlFor="phone">Phone number</label>
                   <div
                     className="invalid-feedback"
                     data-sb-feedback="phone:required"
@@ -191,7 +191,7 @@ function Home() {
                     style={{height: "10rem"}}
                     data-sb-validations="required"
                   ></textarea>
-                  <label for="message">Message</label>
+                  <label htmlFor="message">Message</label>
                   <div
                     className="invalid-feedback"
                     data-sb-feedback="message:required"
