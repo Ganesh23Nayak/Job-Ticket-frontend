@@ -5,17 +5,17 @@ import Profile from './Profile'
 import './Dash.css'
 
 
-function Dashboard() {
+function Dashboard({type}) {
   return (
-   <>
-   
-<div className="d-flex">
-  <Profile/>
-   <div className="d-flex flex-column">
-  <Phone_Email/>
-  <Dash/>    
-    </div>  
-  </div>   </>
+  <>
+    <div className="d-flex">
+      <Profile/>
+      <div className="d-flex flex-column">
+        <Phone_Email type={type}/>
+        <Dash type={type}/>
+      </div>
+    </div>
+  </>
   )
 }
 
