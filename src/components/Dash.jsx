@@ -2,7 +2,7 @@ import React from "react";
 
 import Pending from './Pending'
 import Verified from './Verified'
-export default function Dash() {
+export default function Dash({type}) {
   return (
     <>
       <div className="container-fluid  ">

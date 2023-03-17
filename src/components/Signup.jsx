@@ -1,7 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import './Signup.css'
 
 function Signup({type}) {
+
+  
+
   return (
 <>
 <div className='body'>
@@ -11,7 +15,7 @@ function Signup({type}) {
 		<p className="hint-text">Create your account. It's free and only takes a minute.</p>
         <div className="form-group">
 
-	<input type="text" className="form-control" name="Name" placeholder=" Name" required="required"/>
+	<input type="text" className="form-control" name="name" placeholder=" Name" required="required"/>
 			
 	       	
         </div>
@@ -19,7 +23,7 @@ function Signup({type}) {
         	<input type="email" className="form-control" name="email" placeholder="Email" required="required"/>
         </div>
         <div className="form-group">
-        	<input type="number" className="form-control" name="number" placeholder={type === "user" ? "Phone Number" : "Business ID"} required="required"/>
+        	<input type={type === "user" ? "tel" : "text"} className="form-control" name="contact" placeholder={type === "user" ? "Phone Number" : "Business ID"} required="required"/>
         </div> 
 		<div className="form-group">
             <input type="password" className="form-control" name="password" placeholder="Password" required="required"/>
@@ -44,7 +48,7 @@ function Signup({type}) {
             <button type="submit" className="btn btn-success btn-lg btn-block">Register Now</button>
         </div>
     </form>
-	<div className="text-center">Already have an account? <a href="#">Log In</a></div>
+	<div className="text-center">Already have an account? <Link to="/login" >Log In</Link></div>
 </div>
 </div>
 </>
