@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import {Link} from 'react-router-dom'
 
 import './Signup.css'
 
@@ -77,7 +78,7 @@ function Signup({ type }) {
               <button type='submit' className="btn btn-success btn-lg btn-block">Register Now</button>
             </div>
           </form>
-          <div className="text-center">Already have an account? <a href="#">Log In</a></div>
+          <div className="text-center">Already have an account? <Link to='/login'>Log In</Link></div>
         </div>
       </div>
     </>

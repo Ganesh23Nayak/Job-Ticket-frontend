@@ -11,7 +11,7 @@ function ExpForm() {
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
-        Launch demo modal
+      Add New
       </button>
 
       <div
@@ -24,7 +24,7 @@ function ExpForm() {
         <div className="modal-dialog modal-dialog-scrollable modal-dialog-centered">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">
+              <h1 className="modal-title fs-5 text-dark" id="exampleModalLabel">
                 Experience
               </h1>
               <button
@@ -36,14 +36,14 @@ function ExpForm() {
             </div>
             <div className="modal-body ">
               <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label">
-                  Enter the company Name
+                <label for="exampleFormControlTextarea1" className="form-label text-dark">
+               Company Name
                 </label>
                 <Drop />
               </div>
 
               <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label">
+                <label for="exampleFormControlTextarea1" className="form-label text-dark">
                   Enter Job Details
                 </label>
                 <textarea
@@ -57,7 +57,7 @@ function ExpForm() {
   <div class="row">
     <div class="col">
     <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label">
+                <label for="exampleFormControlTextarea1" className="form-label text-dark">
                From
                 </label>
                 <div className="input-group date">
@@ -70,7 +70,7 @@ function ExpForm() {
     </div>
     <div class="col">
     <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label">
+                <label for="exampleFormControlTextarea1" className="form-label text-dark">
                To
                 </label>
                 <div className="input-group date">
@@ -97,7 +97,7 @@ function ExpForm() {
                 Close
               </button>
               <button type="button" className="btn btn-primary">
-                Save changes
+               Add
               </button>
             </div>
           </div>

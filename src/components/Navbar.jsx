@@ -7,7 +7,7 @@ function Navbar({props}) {
   return (
     <>
     {/* <!-- Navbar start --> */}
-    <nav className="navbar navbar-expand-lg nav-color fixed-top">
+    <nav className="navbar navbar-expand-lg nav-color fixed-top ">
         <div className="container-fluid">
           {/* <a className="navbar-brand text-light" href="#"><h2> JobTicket</h2></a> */}
           {<NavLink to={"/"}>JobTicket</NavLink>}
@@ -23,12 +23,12 @@ function Navbar({props}) {
                   <li className="nav-item"><a className="nav-link text-white nav-l text-center" href="#contact">Contact</a></li>
                   <li className="nav-item">
                     <Link to="/signup/company">
-                      <button className="btn btn-outline-light text-white">Office Login/Sign Up</button>
+                      <button className="btn btn-outline-secondary text-white mx-1">Office Login/Sign Up</button>
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/signup/user">
-                      <button className="btn btn-outline-light text-white">Employee Login/Sign Up</button>
+                      <button className="btn btn-outline-secondary text-white mx-1">Employee Login/Sign Up</button>
                     </Link>
                   </li>
           

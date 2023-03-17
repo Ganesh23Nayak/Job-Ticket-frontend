@@ -1,5 +1,7 @@
 import React from 'react'
 import './Login.css'
+import {useState} from 'react'
+import { Link } from 'react-router-dom';
 
 function Login() {
   const setData = (data) => {
@@ -82,15 +84,6 @@ function Login() {
                     >
                       Login
                     </button>
-                  </div>
-
-                  <div>
-                    <p className="">
-                      Don't have an account?
-                      <a href="#!" className="text-white-50 fw-bold">
-                        Sign Up
-                      </a>
-                    </p>
                   </div>
                 </div>
               </div>
