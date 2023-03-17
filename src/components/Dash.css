@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .cont-space
+{
+    height: 100vh;
+    /* width: 30vw; */
+/* } */ 
+body{
+    background-color: rgb(254, 249, 249) !important;
+}
+.emp-picture
+{
+    /* width: 60%; */
+    /* height: 50; */
+    border-radius: 50%;
+}
+.bg-set
+{
+    background-color: #603c3c;
+}
+/* .cont-space-2
+{
+    width: 100vh;
+} */
+
+.exp-bg-set
+{
+    background-color: white;
+    overflow-y: scroll;
+    height: 70vh;
+}
+
+.green-bg-set
+{
+    background-color: greenyellow;
+}
+.pending-bg-set
+{
+    background-color: rgb(205, 228, 176);
+}
+.done-btn-col
+{
+    background-color:greenyellow ;
+    border: 0;
+    /* border-radius: 20%; */
+}
+.pending-btn-col
+{
+    color: rgb(205, 228, 176);
+    color:black;
+    border: 0;
+    /* border-radius: 20%; */
+    
+
+}
+.nav-color
+{
+    background-color: #3b1919;
+}
+/* .profile-bg-set
+{
+   
+} */
+img
+{
+    clip-path: circle(100%)
+}
+.edit-btn
+{
+    background-color: #603c3c;
+    border: 0;
+}
+.main_experience
+{
+    background-color:#d9d9d9 ;
+}
