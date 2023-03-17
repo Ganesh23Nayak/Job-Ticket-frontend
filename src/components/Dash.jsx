@@ -1,4 +1,5 @@
 import React from "react";
+import ExpForm from "./ExpForm";
 
 import Pending from './Pending'
 import Verified from './Verified'
@@ -16,7 +17,7 @@ export default function Dash({type}) {
                 <h2>EXPERIENCE</h2>
               </div>
               <div className="add_new my-2 mr-2">
-                <button className="btn btn-primary">Add New</button>
+                <ExpForm></ExpForm>
               </div>
             </div>
             <div className="container exp-bg-set ">

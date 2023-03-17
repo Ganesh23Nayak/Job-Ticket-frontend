@@ -32,7 +32,7 @@ function Login() {
         if (data.data.message === "success") {
           setData(data.data.data);
           console.log(window.sessionStorage.getItem('contact'));
-          window.location.replace('/dashboard');
+          window.location.replace('/dashboard/' + data.data.type);
         }
         else {
           SetMessage(data.data.message);
@@ -60,7 +60,7 @@ function Login() {
 
                     <div className="form-outline form-white ">
                       <input
-                        type="email"
+                        type="text"
                         id="typeEmailX"
                         className="form-control form-control-lg"
                         onChange={(e) => { setcontact(e.target.value) }}

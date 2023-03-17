@@ -5,7 +5,7 @@ import './Signup.css'
 
 function Signup({ type }) {
   const setData = (data) => {
-    for (key in data) {
+    for (var key in data) {
       window.sessionStorage.setItem(key, data[key]);
     }
   }
@@ -23,6 +23,7 @@ function Signup({ type }) {
         contact,
         email,
         password,
+        type
       },
       {
         'Content-Type': 'application/json',
@@ -31,7 +32,7 @@ function Signup({ type }) {
       .then(data => {
         setShowLoading(true)
         setData(data.data.data);
-        window.location.replace('/dashboard') //Change dashboard to user or company as needed
+        window.location.replace('/dashboard/' + type) //Change dashboard to user or company as needed
       })
       .catch(err => console.log(err))
   }
@@ -52,7 +53,7 @@ function Signup({ type }) {
               <input type="email" className="form-control" name="email" placeholder="Email" required="required" onChange={(e) => { setemail(e.target.value) }} />
             </div>
             <div className="form-group">
-              <input type="number" className="form-control" name="number" placeholder={type === "user" ? "Phone Number" : "Business ID"} required="required" onChange={(e) => { setcontact(e.target.value) }} />
+              <input type={type === "user"? "tel":"text"} className="form-control" name="number" placeholder={type === "user" ? "Phone Number" : "Business ID"} required="required" onChange={(e) => { setcontact(e.target.value) }} />
             </div>
             <div className="form-group">
               <input type="password" className="form-control" name="password" placeholder="Password" required="required" onChange={(e) => { setpassword(e.target.value) }} />
