@@ -24,12 +24,12 @@ function Navbar({ props }) {
                 <>
                   <li className="nav-item">
                     <Link to="/signup/company">
-                      <button className="btn btn-outline-light text-white">Office Login/Sign Up</button>
+                      <button className="btn btn-outline-secondary text-white mx-1">Office Login/Sign Up</button>
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link to="/signup/user">
-                      <button className="btn btn-outline-light text-white">Employee Login/Sign Up</button>
+                      <button className="btn btn-outline-secondary text-white mx-1">Employee Login/Sign Up</button>
                     </Link>
                   </li>
                 </>

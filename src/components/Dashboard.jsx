@@ -8,9 +8,9 @@ import './Dash.css'
 function Dashboard({type}) {
   return (
   <>
-    <div className="d-flex">
+    <div className="d-lg-flex">
       <Profile/>
-      <div className="d-flex flex-column">
+      <div className="d-lg-flex flex-column">
         <Phone_Email type={type}/>
         <Dash type={type}/>
       </div>

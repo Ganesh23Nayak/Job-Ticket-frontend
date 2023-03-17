@@ -13,10 +13,7 @@ function Home() {
             </div>
             <div className="col-lg-8 align-self-baseline">
               <p className="text-white-75 mb-5">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum,
-                nemo iure eaque doloribus asperiores perspiciatis quia quasi
-                sint aperiam in ab, quaerat recusandae tenetur non nisi dolore.
-                Rerum, asperiores veniam!
+              Our website offers a reliable employee verification service that helps recruiters make informed hiring decisions by providing them with accurate background and experience information on potential candidates.
               </p>
               <a className="btn btn-primary btn-xl" href="#about">
                 Find Out More
