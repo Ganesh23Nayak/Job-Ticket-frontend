@@ -77,7 +77,7 @@ function Signup({ type }) {
               <button type='submit' className="btn btn-success btn-lg btn-block">Register Now</button>
             </div>
           </form>
-          <div className="text-center">Already have an account? <a href="#">Log In</a></div>
+          <div className="text-center">Already have an account? <a href="/login">Log In</a></div>
         </div>
       </div>
     </>

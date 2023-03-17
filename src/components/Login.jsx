@@ -1,9 +1,12 @@
 import React from 'react'
 import './Login.css'
+import { useState } from 'react';
+import axios from 'axios';
+
 
 function Login() {
   const setData = (data) => {
-    for (key in data) {
+    for (var key in data) {
       window.sessionStorage.setItem(key, data[key]);
     }
   }
@@ -12,6 +15,7 @@ function Login() {
   const [email, setemail] = useState("");
   const [password, setpassword] = useState("");
   const [ShowLoading, setShowLoading] = useState(false);
+  const [Message, SetMessage] = useState("");
 
   const loginUser = () => {
     axios.post(`${import.meta.env.VITE_SERVER_URL}/api/signIn`,
@@ -25,8 +29,17 @@ function Login() {
       },)
       .then(data => {
         setShowLoading(true)
-        setData(data.data.data);
-        window.location.replace('/dashboard') //Change dashboard to user or company as needed
+        if (data.data.message === "success") {
+          setData(data.data.data);
+          console.log(window.sessionStorage.getItem('contact'));
+          window.location.replace('/dashboard');
+        }
+        else {
+          SetMessage(data.data.message);
+          setTimeout(() => {
+            SetMessage("");
+          }, 2000);
+        }
       })
       .catch(err => console.log(err))
   }
@@ -81,14 +94,8 @@ function Login() {
                       Login
                     </button>
                   </div>
-
+                  {Message && (<p>{Message}</p>)}
                   <div>
-                    <p className="">
-                      Don't have an account?
-                      <a href="#!" className="text-white-50 fw-bold">
-                        Sign Up
-                      </a>
-                    </p>
                   </div>
                 </div>
               </div>
