@@ -17,7 +17,7 @@ function ExpForm() {
       <div
         className="modal fade"
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
@@ -36,14 +36,14 @@ function ExpForm() {
             </div>
             <div className="modal-body ">
               <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label text-dark">
+                <label htmlFor="exampleFormControlTextarea1" className="form-label text-dark">
                Company Name
                 </label>
                 <Drop />
               </div>
 
               <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label text-dark">
+                <label htmlFor="exampleFormControlTextarea1" className="form-label text-dark">
                   Enter Job Details
                 </label>
                 <textarea
@@ -53,11 +53,11 @@ function ExpForm() {
                 ></textarea>
               </div>
 
-              <div class="container text-center">
-  <div class="row">
-    <div class="col">
+              <div className="container text-center">
+  <div className="row">
+    <div className="col">
     <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label text-dark">
+                <label htmlFor="exampleFormControlTextarea1" className="form-label text-dark">
                From
                 </label>
                 <div className="input-group date">
@@ -68,9 +68,9 @@ function ExpForm() {
                 </div>
               </div>
     </div>
-    <div class="col">
+    <div className="col">
     <div className="mb-3">
-                <label for="exampleFormControlTextarea1" className="form-label text-dark">
+                <label htmlFor="exampleFormControlTextarea1" className="form-label text-dark">
                To
                 </label>
                 <div className="input-group date">

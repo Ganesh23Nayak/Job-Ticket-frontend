@@ -2,7 +2,8 @@ import React from "react";
 import ExpForm from "./ExpForm";
 
 import Pending from './Pending'
-import Verified from './Verified'
+import Verfied from "./Verfied";
+// import Verified from './Verified'
 export default function Dash({type}) {
   return (
     <>
@@ -13,7 +14,7 @@ export default function Dash({type}) {
           {/* <!-- start of experience part --> */}
           <div className="main_experience p-3 ">
             <div className="exp-heading d-flex justify-content-between">
-              <div className="experience my-2">
+              <div className="experience my-2 text-dark">
                 <h2>EXPERIENCE</h2>
               </div>
               <div className="add_new my-2 mr-2">
@@ -39,8 +40,8 @@ export default function Dash({type}) {
                   </div>
                 </div>
               </div>
-        <Pending/>
-   <Verified/>
+        <Pending />
+   <Verfied />
 
               {/* <!-- End of individual experience  pending box --> */}
             </div>

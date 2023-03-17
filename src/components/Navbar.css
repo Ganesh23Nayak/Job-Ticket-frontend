@@ -5,3 +5,13 @@
 .nav-l{
     margin-top: 3px;
 }
+
+.nav-head{
+    
+    color: beige;
+    font-size: xx-large;
+    font-weight: 500;
+}
+.navbar a{
+    text-decoration: none !important;
+}

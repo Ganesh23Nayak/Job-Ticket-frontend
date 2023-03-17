@@ -4,10 +4,10 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
-body {
+/* body {
   width: 100%;
   height: 100%;
-}
+} */
 
 .page-section {
   padding: 8rem 0;
@@ -52,10 +52,21 @@ header.masthead {
   
   /* about */
   #about{
-    background-color: #f0d994;
+    background-color: #f0d994 !important;
+    color: #5e420d;
+  }
+  #contact{
+    background-color: #2b2106 !important;
+    color:rgb(39, 37, 37);
+  }
+
+  .text-white{
+    color:#f0d994  !important;
   }
 
   .card-bg{
     background-color: #5e420d;
     color: white;
   }
+
+  

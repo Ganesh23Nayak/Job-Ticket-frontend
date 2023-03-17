@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+
+
 function Home() {
   return (
     <>
@@ -33,75 +35,64 @@ function Home() {
               <div className="row row-cols-1 row-cols-md-2 g-4">
                 <div className="col">
                   <div className="card card-bg">
-                    <img
+                    {/* <img
                       src="./GANESH (1).JPG"
                       className="card-img-top"
                       alt="..."
-                    />
+                    /> */}
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
-                      </p>
+                      <h5 className="card-title">Aniruddha Upadhaya k</h5>
+                      <p className="card-text opacity-75">
+                      I'm a student of NMAM Institute of Tehcnology,persuing B.E in Electronic and Communication Engineering.I'm a Web Dev enthusiast who is eager to learn and understand new technologies.                      </p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card card-bg">
-                    <img
-                      src="./GANESH (1).JPG"
+                    {/* <img
+                      src="./P3.JPG"
                       className="card-img-top "
                       alt="..."
-                    />
+                    /> */}
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                      <h5 className="card-title">Srivatsa R Upadhya</h5>
+                      <p className="card-text opacity-75">
+                      I'm a student of NMAM Institute of Tehcnology,persuing B.E in Computer Science and  Engineering.I'm a Web Dev enthusiast who is eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card card-bg">
-                    <img
+                    {/* <img
                       src="./GANESH (1).JPG"
                       className="card-img-top"
                       alt="..."
-                    />
+                    /> */}
                     <div className="card-body card-bg">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
+                      <h5 className="card-title">Kishor S Naik</h5>
+                      <p className="card-text opacity-75">
+                      I am a student of NMAM Institute of Technology, pursuing a Bachelor’s degree in Information Science and  Engineering. I am passionate about web development and always eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card card-bg">
-                    <img
+                    {/* <img
                       src="./GANESH (1).JPG"
                       className="card-img-top"
                       alt="..."
-                    />
+                    /> */}
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
-                      <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                      <h5 className="card-title">Ganesh Nayak</h5>
+                      <p className="card-text opacity-75">
+                      I am a student of NMAM Institute of Technology, pursuing a Bachelor’s degree in Computer Science and  Engineering. I am passionate about web development and always eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <a className="btn btn-light btn-xl mt-3" href="#services">
-                Get Started!
-              </a>
             </div>
           </div>
         </div>
@@ -109,13 +100,13 @@ function Home() {
 
       {/*       
         <!-- Contact--> */}
-      <section className="page-section" id="contact">
+      <section className="page-section " id="contact">
         <div className="container px-4 px-lg-5">
           <div className="row gx-4 gx-lg-5 justify-content-center">
-            <div className="col-lg-8 col-xl-6 text-center">
+            <div className="col-lg-8 col-xl-6 text-center text-white">
               <h2 className="mt-0">Let's Get In Touch!</h2>
               <hr className="divider" />
-              <p className="text-muted mb-5">
+              <p className="text-muted mb-5 text-white">
                 Ready to start your next project with us? Send us a messages and
                 we will get back to you as soon as possible!
               </p>
