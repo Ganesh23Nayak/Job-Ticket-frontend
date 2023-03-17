@@ -9,7 +9,7 @@ backdrop-filter: blur(9.3px);
 margin-top: 25px;
 }
 
-body {
+body, .body {
 background-image: url(./annie-spratt-sggw4-qDD54-unsplash.jpg);
 background-color: rgba(0, 0, 0, 0.548);
 background-size: cover;

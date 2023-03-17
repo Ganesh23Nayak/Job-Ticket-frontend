@@ -1,46 +1,34 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import {BrowserRouter, Route, Routes, NavLink} from 'react-router-dom'
 import './App.css'
+import Dashboard from './components/Dashboard';
 import Home from './components/Home';
-// import Login from './components/Login';
+import Login from './components/Login';
 import Navbar from './components/Navbar';
-// import Pending from './components/Pending';
-// import Nav1 from './components/Nav1';
-// import Dash from './components/Dash';
-// import Profile from './components/Profile';
-import Home from './components/Home';
-// import Signup from './components/Signup';
-// import Pending from './components/Pending';
-// import Verified from './components/Verfied';
+import Signup from './components/Signup'
 
 function App() {
-  // const [count, setCount] = useState(0)
+
+  // return (
+  //   <>
+  //     <Navbar/>
+  //     <Home/> 
+  //   </>
+  // )
+
 
   return (
-    <>
-     <Navbar/>
-      {/* <Login/>  */}
-     {/* <Home/> */}
-{/* <Nav1/>   checked */}
-{/* <Dash/> checked */}
-
-{/* <Pending/> 
-// <Verified/>  checked */}
-{/* <Login/> */}
-{/* <Profile/>*/} *
-<Home/> 
-
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/signup/user' element={<Signup type="user" />} />
+        <Route path='/signup/company' element={<Signup type="company" />} />
+        <Route path='/dashboard/user' element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   )
-  // return (
-  //   <BrowserRouter>
-  //     <Routes>
-  //       <Route path='/' element={<Home />}>Home</Route>
-  //       <Route path='/' element={<Home />}>Home</Route>
-  //       <Route path='/' element={<Home />}>Home</Route>
-  //     </Routes>
-  //   </BrowserRouter>
-  // )
 }
 
 export default App

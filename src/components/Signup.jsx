@@ -1,10 +1,10 @@
 import React from 'react'
 import './Signup.css'
 
-function Signup() {
+function Signup({type}) {
   return (
 <>
-<body>
+<div className='body'>
 <div className="signup-form">
     <form action="/examples/actions/confirmation.php" method="post">
 		<h2>Register</h2>
@@ -18,15 +18,15 @@ function Signup() {
         <div className="form-group">
         	<input type="email" className="form-control" name="email" placeholder="Email" required="required"/>
         </div>
+        <div className="form-group">
+        	<input type="number" className="form-control" name="number" placeholder={type === "user" ? "Phone Number" : "Business ID"} required="required"/>
+        </div> 
 		<div className="form-group">
             <input type="password" className="form-control" name="password" placeholder="Password" required="required"/>
         </div>
 		<div className="form-group">
             <input type="password" className="form-control" name="confirm_password" placeholder="Confirm Password" required="required"/>
         </div>  
-        <div className="form-group">
-        	<input type="number" className="form-control" name="number" placeholder="Phone Number" required="required"/>
-        </div> 
         <div className="form-group">
      
           <p>Choose Profile Picture</p>
@@ -46,7 +46,7 @@ function Signup() {
     </form>
 	<div className="text-center">Already have an account? <a href="#">Log In</a></div>
 </div>
-</body>
+</div>
 </>
   )
 }
