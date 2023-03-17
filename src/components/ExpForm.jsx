@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
 import { Autocomplete, TextField } from "@mui/material";
-import { io } from "socket.io-client";
 
-const socket = io(`${import.meta.env.VITE_SERVER_URL}`);
 
-function ExpForm() {
+function ExpForm({type}) {
   const [StartDate, SetStartDate] = useState("");
   const [EndDate, SetEndDate] = useState("");
   const [Desc, SetDesc] = useState("");
@@ -21,21 +19,11 @@ function ExpForm() {
       .then(data => {
         // console.log(data.data.data[0])
         const result = data.data.data.map((element, index) => {
-          return (<option key={index} className={``}  value={element.FullName} id={element.uuid} >{element.FullName}</option>)
+          return (<option key={index}  value={element.FullName} id={element.uuid} >{element.FullName}</option>)
         })
         setAllCompanies(result)
       })
       .catch(err => console.log(err))
-
-    socket.connect();
-    socket.emit("join", ({ name: window.sessionStorage.getItem('name'), uuid:  window.sessionStorage.getItem('uuid')}))
-    socket.on("greet", (data) => {
-      console.log(data);
-    })
-    socket.emit("get-reviews", ({ uuid: window.sessionStorage.getItem('uuid') }))
-    socket.on("data", (data) => {
-      console.log(data.data);
-    })
   }, [])
 
   const submit = (e) => {
@@ -50,14 +38,16 @@ function ExpForm() {
   }
   return (
     <>
-      <button
+      {(type === "user") ? (
+        <button
         type="button"
         className="btn btn-primary"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal"
       >
-        Add new Experience
+        Add new
       </button>
+      ):(null)}
 
       <div
         className="modal fade"

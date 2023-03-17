@@ -4,10 +4,6 @@ html {
   scroll-padding-top: calc(4.5rem - 1px);
 }
 
-body {
-  width: 100%;
-  height: 100%;
-}
 
 .page-section {
   padding: 8rem 0;
@@ -53,9 +49,19 @@ header.masthead {
   /* about */
   #about{
     background-color: #f0d994;
+    color: #5e420d;
   }
 
   .card-bg{
     background-color: #5e420d;
     color: white;
   }
+  .text-white {
+    color: #f0d994 !important;
+  }
+
+#contact {
+  background-color: #2b2106 !important;
+  color: rgb(39, 37, 37);
+
+}

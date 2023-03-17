@@ -8,7 +8,7 @@ function Home() {
         <div className="container px-4 px-lg-5 h-100">
           <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
             <div className="col-lg-8 align-self-end">
-              <h1 className="text-white font-weight-bold">Welcome</h1>
+              <h1 className="font-weight-bold">Welcome</h1>
               <hr className="divider" />
             </div>
             <div className="col-lg-8 align-self-baseline">
@@ -33,13 +33,14 @@ function Home() {
               <div className="row row-cols-1 row-cols-md-2 g-4">
                 <div className="col">
                   <div className="card card-bg">
-                    <img
+                    {/* <img
                       src="./GANESH (1).JPG"
                       className="card-img-top"
                       alt="..."
-                    />
+                    /> */}
+
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Aniruddha Upadhya K</h5>
                       <p className="card-text">
                         This is a longer card with supporting text below as a
                         natural lead-in to additional content. This content is a
@@ -113,9 +114,9 @@ function Home() {
         <div className="container px-4 px-lg-5">
           <div className="row gx-4 gx-lg-5 justify-content-center">
             <div className="col-lg-8 col-xl-6 text-center">
-              <h2 className="mt-0">Let's Get In Touch!</h2>
+              <h2 className="mt-0 text-white">Let's Get In Touch!</h2>
               <hr className="divider" />
-              <p className="text-muted mb-5">
+              <p className="text-muted mb-5 text-white">
                 Ready to start your next project with us? Send us a messages and
                 we will get back to you as soon as possible!
               </p>
