@@ -33,68 +33,40 @@ function Home() {
               <div className="row row-cols-1 row-cols-md-2 g-4">
                 <div className="col">
                   <div className="card card-bg">
-                    {/* <img
-                      src="./GANESH (1).JPG"
-                      className="card-img-top"
-                      alt="..."
-                    /> */}
-
                     <div className="card-body">
                       <h5 className="card-title">Aniruddha Upadhya K</h5>
                       <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                      I'm a student of NMAM Institute of Tehcnology,persuing B.E in Electronic and Communication Engineering.I'm a Web Dev enthusiast who is eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card card-bg">
-                    <img
-                      src="./GANESH (1).JPG"
-                      className="card-img-top "
-                      alt="..."
-                    />
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Srivatsa R Upadhya</h5>
                       <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                      I'm a student of NMAM Institute of Tehcnology,persuing B.E in Computer Science and  Engineering.I'm a Web Dev enthusiast who is eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card card-bg">
-                    <img
-                      src="./GANESH (1).JPG"
-                      className="card-img-top"
-                      alt="..."
-                    />
                     <div className="card-body card-bg">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Kishor S Naik</h5>
                       <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content.
+                      I am a student of NMAM Institute of Technology, pursuing a Bachelor’s degree in Information Science and  Engineering. I am passionate about web development and always eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col">
                   <div className="card card-bg">
-                    <img
-                      src="./GANESH (1).JPG"
-                      className="card-img-top"
-                      alt="..."
-                    />
                     <div className="card-body">
-                      <h5 className="card-title">Card title</h5>
+                      <h5 className="card-title">Ganesh Nayak</h5>
                       <p className="card-text">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer.
+                      I am a student of NMAM Institute of Technology, pursuing a Bachelor’s degree in Computer Science and  Engineering. I am passionate about web development and always eager to learn and understand new technologies.
                       </p>
                     </div>
                   </div>
