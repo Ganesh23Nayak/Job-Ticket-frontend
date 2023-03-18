@@ -21,7 +21,7 @@ export default function Dash({ type }) {
     socket.on("greet", (data) => {
       console.log(data);
     })
-    socket.emit("get_reviews", ({ uuid: window.sessionStorage.getItem('uuid') }))
+    socket.emit("get_reviews", ({ uuid: window.sessionStorage.getItem('uuid'), type }))
     socket.on("data", (data) => {
       console.log(data.data);
       setAllReviews(data.data);
@@ -50,7 +50,7 @@ export default function Dash({ type }) {
               </div>
               <div className="btns-done-pending d-flex justify-content-end flex-grow-1">
                 <div>
-                  <button className="mx-3 mt-3 done-btn-col px-2 py-1" onClick={() => {
+                  <button className={`${ShowAccepted ? ('btn-success') : ('btn-light')} btn mx-3 mt-3  px-2 py-1`} onClick={() => {
                     setShowVerified(true);
                     setShowPending(false);
                     setShowRejected(false);
@@ -60,7 +60,7 @@ export default function Dash({ type }) {
                   </button>
                 </div>
                 <div>
-                  <button className="mx-3 mt-3 pending-btn-col px-2 py-1" onClick={() => {
+                  <button className={`${ShowPending ? ('btn-warning') : ('btn-light')} btn  mx-3 mt-3 px-2 py-1`} onClick={() => {
                     setShowVerified(false);
                     setShowPending(true);
                     setShowRejected(false);
@@ -70,7 +70,7 @@ export default function Dash({ type }) {
                   </button>
                 </div>
                 <div>
-                  <button className="mx-3 mt-3 pending-btn-col px-2 py-1" onClick={() => {
+                  <button className={`${ShowRejected ? ('btn-danger') : ('btn-light')} btn  mx-3 mt-3 px-2 py-1`} onClick={() => {
                     setShowVerified(false);
                     setShowPending(false);
                     setShowRejected(true);
@@ -80,7 +80,7 @@ export default function Dash({ type }) {
                   </button>
                 </div>
                 <div>
-                  <button className="mx-3 mt-3 pending-btn-col px-2 py-1" onClick={() => { 
+                  <button className={`${ShowAbsconeded ? ('btn-dark') : ('btn-light')} btn mx-3 mt-3 px-2 py-1`} onClick={() => { 
                     setShowVerified(false);
                     setShowPending(false);
                     setShowRejected(false);

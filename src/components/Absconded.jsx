@@ -15,7 +15,7 @@ export default function Absconded({ data, type }) {
       {/* <!-- Start of individual experience box --> */}
       {pendingReviews.map((review, key) => {
         return (
-          <div key={key} className="card  text-center pending-bg-set my-3">
+          <div key={key} className="card  text-center pending-bg-set my-3 bg-warning">
             {/* <div className="mt-4 mb-4"><img className="mt-3" src="img/download (3).jpeg" alt=""/></div> */}
             <div className="d-lg-flex flex-column  mt-5 text-dark my-3 ">
               <h3>{review.Company_Name}</h3>

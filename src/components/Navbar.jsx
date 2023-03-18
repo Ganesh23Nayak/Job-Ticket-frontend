@@ -20,7 +20,7 @@ function Navbar({ props }) {
               <li className="nav-item"><a className="nav-link text-white text-right nav-l  " href="#top">Home</a></li>
               <li className="nav-item"><a className="nav-link text-white nav-l text-right " href="#about">About</a></li>
               <li className="nav-item"><a className="nav-link text-white nav-l text-right" href="#contact">Contact</a></li>
-              {!window.sessionStorage.getItem('contact') && (
+              {!window.sessionStorage.getItem('contact') ? (
                 <>
                   <li className="nav-item">
                     <Link to="/signup/company">
@@ -33,7 +33,9 @@ function Navbar({ props }) {
                     </Link>
                   </li>
                 </>
-              )}
+              ) : (<li className="nav-item">
+                <button onClick={()=>{sessionStorage.clear(); window.location.replace('/')}} className="btn btn-outline-secondary text-white mx-1 text-right my-2">Logout</button>
+              </li>)}
 
             </ul>
             {/* </div> */}

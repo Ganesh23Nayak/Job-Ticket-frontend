@@ -1,14 +1,14 @@
 import React from 'react'
 import "./Dash.css";
 export default function Verified({ data }) {
-  const verifiedReviews = data.filter((review) => { return review.Review_status === "Accept" })
+  const verifiedReviews = data.filter((review) => { return review.Review_status === "Accepted" })
   console.log(verifiedReviews);
   return (
     <>
       {/* <!-- Start of individual experience box --> */}
       {verifiedReviews.map((review, key) => {
         return (
-          <div key={key} className="card  text-center green-bg-set my-3">
+          <div key={key} className="card  text-center green-bg-set my-3 bg-success">
             {/* <div className="mt-4 mb-4"><img className="mt-3" src="img/download (3).jpeg" alt=""/></div> */}
             <div className="d-lg-flex flex-column  mt-5 text-dark my-3 ">
               <h3>{review.Company_Name}</h3>
